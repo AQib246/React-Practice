@@ -1,0 +1,96 @@
+body{
+    background-color: #9266ff;
+    text-transform: capitalize;
+}
+.maindiv{
+    background-color: #3f3160;
+    min-height: 480px;
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+.textfleid{
+    background-color: rgb(27, 112, 137);
+    border: 0;
+    width: 200px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 9px;
+    color: white;
+    margin: 10px;
+    text-transform: capitalize;
+    
+}
+
+.textfleid::placeholder{
+    color:rgb(255, 255, 255, 0.5);
+}
+.textfleid:focus{
+    outline: none;
+}
+.btn{
+    width: 80px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(202,156,42);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+
+
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    background-color: rgb(202,156,42 , 0.8);
+
+}
+.List{
+    color: #fff;
+    background-color: #bf07ac;
+    height: 50px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+p{
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+.delbtn{
+    height:30px;
+    width: 60px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-weight: bolder;
+    border: 0px;
+    background-color: rgb(202,156,42);
+    cursor: pointer;
+}
+.delbtn:focus{
+    outline: none;
+}
+.delbtn:hover{
+    background-color: rgb(202,156,42 , 0.8);
+
+}
+h1{
+      color: rgba(197, 196, 201, 0.904);
+      padding-top: 10px;
+      font-size: 30px;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   
+
+}
+
+    
