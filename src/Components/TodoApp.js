@@ -43,10 +43,10 @@ class TodoApp extends React.Component
     }
 
          
-    HandleDelete =(event) => {
-        fire.database().ref("data").child(event).remove()
+    HandleDelete =(index) => {
+        fire.database().ref("data").child(index).remove()
         var iteminstance = this.state.todoitems.slice();
-        iteminstance.splice(event , 1)
+        iteminstance.splice(index , 1)
         this.setState({
             todoitems: iteminstance,
             items:""
@@ -54,13 +54,7 @@ class TodoApp extends React.Component
 
     }
 
-    handleLogout = () => {
-        fire.auth().signOut().then(() => {
-            alert("You are Successfully Logout")
-            
-        })
-    }
-
+  
     writeinfirebase = () =>{
         fire.database().ref("data").set(this.state.todoitems)
     }
@@ -93,7 +87,7 @@ class TodoApp extends React.Component
                    <div className = "List">
                    <p key = {index}>{mapitem}  <span>
                    
-                       <input type = "button" className = "delbtn" id = {index} value = "Delete" onClick = {(e) => this.HandleDelete(e.target.id)}/>
+                       <input type = "button" className = "delbtn" id = {index} value = "Delete" onClick = {() => this.HandleDelete(index)}/>
                        </span> 
                        </p>
                        </div>
@@ -102,7 +96,7 @@ class TodoApp extends React.Component
            <br/>
 
 
-           {/* <input type = "button"  value = "Logout" onClick ={() => this.handleLogout()} /> */}
+          
             </div>
         )
     }
